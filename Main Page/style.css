@@ -56,7 +56,7 @@ body{
 .sidebar .user .bold {
     opacity: 0;
     position: absolute;
-    right: 35%;
+    right: 25%;
     transition: my_key 0.5s ease-in-out;
 }
 
