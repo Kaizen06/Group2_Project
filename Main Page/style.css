@@ -17,13 +17,13 @@ body{
 }
 .sidebar{
     background-color: black;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
-    height: fit-content;
+    height: 100%;
     width: 80px;
     padding: .4rem .8rem;
-    transition: ease-out 0.2s;
+    transition: all ease-out 0.2s;
 }
 .sidebar.active ~ .main-content {
     left: 250px;
@@ -126,7 +126,8 @@ body{
 } */
 
 .sidebar ul li a:hover {
-    /* transform: scale(1.1);
+    transform: scale(1.1);
+    /*
     border: 1px solid red;
     transition: all ease-in-out 0.1s;
     color: black;
@@ -181,7 +182,7 @@ body{
     transition: all ease-in-out 0.5s;
 }
 .sidebar ul li .tooltip {
-    position:absolute;
+    position: absolute;
     left: 125px;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -192,10 +193,27 @@ body{
     z-index: 20;
     opacity: 0;
 }
+
+/*
+    white-space: nowrap; /* Prevents text from wrapping to the next line 
+    overflow: hidden; /* Hides overflowed text 
+    text-overflow: ellipsis; /* Adds "..." if the text is too long 
+    font-size: calc(1vw + 0.5rem); /* Dynamically scales font size based on viewport width 
+    line-height: 1; /* Ensures consistent line height 
+    width: 100%; /* Optional: Set the container's width 
+    max-width: 100%; /* Ensures text doesn't go beyond the container 
+*/
+
 .sidebar ul li:hover .tooltip {
     opacity: 1;
-    text-wrap: wrap;
     transition: all ease-in-out 0.3s;
+    /* width: calc(40px + 5em); */
+    width: auto;
+    line-height: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: calc(1em + 20px);
+    font-size: calc(0.4vw + 0.5rem);
 }
 .sidebar.active ul li .tooltip {
     display: none;
