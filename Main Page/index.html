@@ -3,104 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="top">
-            <div class="logo">
-                <i class="bx bxl-codepen"> </i>
-                <span>CodeCommerce</span>
-            </div>
-            <i class="bx bx-menu" id="btn"> </i>
+<div class="music-app">
+      <main class="main-content">
+        <header class="header">
+          <nav class="nav-tabs">
+            <button class="nav-tab active">Music</button>
+            <button class="nav-tab">Podcasts</button>
+            <button class="nav-tab">Live</button>
+          </nav>
+          <button class="add-music-btn">
+            <span class="add-music-icon"></span>
+            Add Music
+          </button>
+        </header>
+    
+        <section>
+          <h2 class="section-title">Listen Now</h2>
+          <p class="section-subtitle">Top picks for you. Updated daily.</p>
+          <div class="music-grid">
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/5639ea88-6eb9-4107-9341-104d48ab2f6d.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">React Rendezvous</h3>
+                <p class="music-artist">Ethan Byte</p>
+              </div>
+            </article>
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/8df14421-ea5f-4f1d-9522-01b9352d2a3b.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">The Art of Resusability</h3>
+                <p class="music-artist">Lena Logic</p>
+              </div>
+            </article>
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/c48909ef-0825-403e-a2ea-86d98b5d48ec.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">Stateful Symphony</h3>
+                <p class="music-artist">Beth Binary</p>
+              </div>
+            </article>
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/605e1f29-f398-4f8a-9771-1fecccbb1594.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">Stateful Symphony</h3>
+                <p class="music-artist">Beth Binary</p>
+              </div>
+            </article>
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/addd8d02-07a5-4d18-a6c3-6eefefd989b5.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">Async Awakenings</h3>
+                <p class="music-artist">Nina Netcode</p>
+              </div>
+            </article>
+          </div>
+        </section>
+    
+        <section>
+          <h2 class="section-title">Made for You</h2>
+          <p class="section-subtitle">Your Personal playlists. Updated daily.</p>
+          <div class="music-grid">
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/1cdb3c6f-496c-483b-8665-4a030f9bead9.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">Thinking Components</h3>
+                <p class="music-artist">Lena Logic</p>
+              </div>
+            </article>
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/e72bc20c-fbb7-4254-b84a-932fb266e433.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">Functional Fury</h3>
+                <p class="music-artist">Beth Binary</p>
+              </div>
+            </article>
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/e7d91299-e85d-4e6a-b248-ecd1f89891d7.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">Stateful Symphony</h3>
+                <p class="music-artist">Beth Binary</p>
+              </div>
+            </article>
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/439e22e0-3b92-4d2b-ba19-4737f818b4bb.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">Async Awakenings</h3>
+                <p class="music-artist">Nina Netcode</p>
+              </div>
+            </article>
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/fd840b4c-00e9-43ef-bc04-d4398646895c.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">The Art</h3>
+                <p class="music-artist">Ethan Byte</p>
+              </div>
+            </article>
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/9a92f141-e2b0-42d8-94d7-ef60f2725e31.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">React Rendezvous</h3>
+                <p class="music-artist">Ethan Byte</p>
+              </div>
+            </article>
+            <article class="music-card">
+              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/c96e9da8-204a-450e-9469-9f86ec34b689.png);"></div>
+              <div class="music-info">
+                <h3 class="music-title">React Rendezvous</h3>
+                <p class="music-artist">Ethan Byte</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    
+      <aside class="sidebar">
+        <section class="sidebar-section">
+          <h2 class="sidebar-title">Discover</h2>
+          <button class="sidebar-item-tick">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/04d38b6a-1c39-4e53-b1b5-f8bd6b87563e.png);"></span>
+            <span class="sidebar-text-tick">Listen Now</span>
+          </button>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/3e39f888-ceff-470e-aa3a-da8d2a16574b.png);"></span>
+            <span class="sidebar-text">Browser</span>
+          </button>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/5763e6f4-8b5b-4335-a901-6bbf1861f18f.png);"></span>
+            <span class="sidebar-text">Radio</span>
+          </button>
+        </section>
+    
+        <section class="sidebar-section">
+          <h2 class="sidebar-title">Library</h2>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/08577c16-c0e8-4822-ac05-e56c715c923f.png);"></span>
+            <span class="sidebar-text">Playlists</span>
+          </button>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/db8f367e-b293-4074-b4ff-0d8fc3d5231b.png);"></span>
+            <span class="sidebar-text">Songs</span>
+          </button>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/081c0bff-e8b3-4051-886a-75f596458d0b.png);"></span>
+            <span class="sidebar-text">Made for you</span>
+          </button>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/f23eb18f-3862-4400-ac89-b40967fab232.png);"></span>
+            <span class="sidebar-text">Artists</span>
+          </button>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/6da5fa04-7cc0-48bb-9166-080b6ade33cf.png);"></span>
+            <span class="sidebar-text">Albums</span>
+          </button>
+        </section>
+    
+        <section class="sidebar-section">
+          <h2 class="sidebar-title">Playlists</h2>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/7382aad3-1221-48d8-bd2e-92104bffc814.png);"></span>
+            <span class="sidebar-text">Playlists</span>
+          </button>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/c59f3da1-088b-4532-b89b-872d62122d8f.png);"></span>
+            <span class="sidebar-text">Songs</span>
+          </button>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/e90dc0c1-1747-4ad1-a468-35d496c4e14a.png);"></span>
+            <span class="sidebar-text">Made for you</span>
+          </button>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/cfe84cf8-e65d-4891-92c0-d022e9adfe09.png);"></span>
+            <span class="sidebar-text">Artists</span>
+          </button>
+          <button class="sidebar-item">
+            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/d09879e7-b0cb-4f2f-bd71-a24b51643837.png);"></span>
+            <span class="sidebar-text">Albums</span>
+          </button>
+        </section>
+    
+        <div class="auth-buttons">
+          <button class="auth-button">
+            <span class="auth-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/d0441b64-b37d-4c1b-9d38-7c031d0481e3.png);"></span>
+            <span class="auth-text">Sign up</span>
+          </button>
+          <button class="auth-button">
+            <span class="auth-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/490b6b84-e78b-41f0-aa66-9fbe54cd3a3b.png);"></span>
+            <span class="auth-text">Sign in</span>
+          </button>
         </div>
-        <div class="user">
-            <img src="../profile.png" alt="me" class="user-img">
-            <p class="bold">Hello! [User]</p>
-        </div>
-        <ul class="left_bar">
-            <li class="distribute_content">
-                <hr>
-                <a href="#">
-                    <i class='bx bx-library'></i>
-                    <span class="nav-item">Your library</span>
-                </a>
-                <span class="tooltip">Your library</span>
-            </li>
-            <li class="distribute_content">
-                <a href="#">
-                    <i class="bx bx-home"></i>
-                    <span class="nav-item">Home</span>
-                </a>
-                <span class="tooltip">Home</span>
-            </li>            
-            <li class="distribute_content">
-                <a href="#">
-                    <i class='bx bx-history'></i>
-                    <span class="nav-item">History</span>
-                </a>
-                <span class="tooltip">History</span>
-            </li>            
-            <li class="distribute_content">
-                <a href="#">
-                    <i class='bx bxs-playlist'></i>
-                    <span class="nav-item">Playlist</span>
-                </a>
-                <span class="tooltip">Playlist</span>
-            </li>            
-            <li class="distribute_content">
-                <hr>
-                <a href="#">
-                    <i class='bx bx-time-five'></i>
-                    <span class="nav-item">Watch Later</span>
-                </a>
-                <span class="tooltip">Watch Later</span>
-            </li>
-            <li class="distribute_content">
-                <a href="#">
-                    <i class="bx bx-cog"></i>
-                    <span class="nav-item">Settings</span>
-                </a>
-                <span class="tooltip">Settings</span>
-            </li>
-            <li class="distribute_content">
-                <a href="#">
-                    <i class='bx bx-error-circle'></i>
-                    <span class="nav-item">Help</span>
-                </a>
-                <span class="tooltip">Help</span>
-            </li>
-            <li class="distribute_content">
-                <a href="#">
-                    <i class='bx bx-mail-send'></i>
-                    <span class="nav-item">Send feedback</span>
-                </a>
-                <span class="tooltip">Send feedback</span>
-            </li>
-            <li class="distribute_content">
-                <a href="#">
-                    <i class='bx bx-log-out'></i>
-                    <span class="nav-item">Log out</span>
-                </a>
-                <hr>
-                <span class="tooltip">Log out</span>
-            </li>
-        </ul>
-    </div>
-
-    <div class="main-content">
-        <div class="container">
-        </div>
-    </div>
-
-
+        <p class="auth-info">Already have an account? <a href="#" class="auth-link">Log in</a></p>
+      </aside>
+    </div>    
 </body>
-<script>
-    document.getElementById('btn').addEventListener('click', function() {
-    var sidebar = document.querySelector('.sidebar');
-    sidebar.classList.toggle('active');
-    });
-</script>
 </html>
