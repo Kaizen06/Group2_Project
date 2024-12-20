@@ -1,11 +1,9 @@
-:root {
---default-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "Source Han Sans CN", sans-serif;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: transparent;
+    border: none;
 }
 
 .music-app {
@@ -21,20 +19,46 @@
 }
 
 
+/*This is for Main Content Styles */
+/*I love you co pilot*/
+/*i want to make grid this time*/
+.main-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    background-color: #888;
+    /* top: 38px; */
+    /* left: 220px; */
+    transform: translate(298px, 20px);
+    padding: 24px 32px;
+    border-right: 1px solid #e4e4e7;
+    border-left: 1px solid #e4e4e7;       
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* 
 
 .main-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
     position: absolute;
-    width: 1143px;
+    width: 100%;
     height: 953px;
     top: 38px;
     left: 296px;
     padding: 24px 32px;
     border-right: 1px solid #e4e4e7;
-    /* border-left: 1px solid #e4e4e7; */
-    overflow: hidden;
+    border-left: 1px solid #e4e4e7;       //changes made here
 }
 
 .header {
@@ -153,11 +177,19 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 1;
+} */
+
+
+
+/*This is for Sidebar Styles */
+
+.sidebar ~ .main-content{
+    width: calc(100% - 300px);
 }
 
 .sidebar {
     position: absolute;
-    width: 296px;
+    width: 200px;
     height: calc(100vh - 38px); /* Adjust based on your layout's header height */
     top: 0; /* Adjust as needed */
     left: 0;
@@ -169,7 +201,6 @@
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 100%;
 }
-
 .sidebar::-webkit-scrollbar {
     width: 3px;
 }
@@ -188,31 +219,7 @@
 }
 
 
-.sidebar-section1{
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    width: 100%;
-    padding: 10px;
-    border-right: 1px solid #e4e4e7;
-}
-.sidebar-section2{
-    grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    width: 100%;
-    padding: 10px;
-    border-right: 1px solid #e4e4e7;
-}
-.sidebar-section3{
-    grid-row: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.sidebar-section{
     gap: 4px;
     width: 100%;
     padding: 10px;
@@ -227,83 +234,172 @@
     line-height: 27px;
     padding: 10px 12px;
 }
-
+/*
 .sidebar-item {
     display: flex;
-    width: 20%;
-    align-items: center;
+    width: 100%;
     gap: 8px;
     padding: 10px 12px;
-    background: #71717A;
-    border-radius: 6px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    .sidebar-icon {
+    border-radius: 6px;             originally a cmd / remove
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);   originally a cmd / remove
+    .sidebar-icon{
+        display: none;
         width: 16px;
         height: 16px;
         background-size: cover;
-        background-position: center;
+        background-position: center;    originally a cmd / remove
+        margin: auto;
         background-repeat: no-repeat;
     }
-    .sidebar-text {
-        display: none;
-        color: #09090b;
-        font-family: Inter, var(--default-font);
+    .sidebar-text{
+        display: none;          originally a cmd / remove
+        color: #fff;
+        font-family: "Roboto" , serif;
         font-size: 14px;
-        font-weight: 500;
         line-height: 21px;
+        margin: auto;
     }
 }
+*/
 
-.sidebar-item-tick{
+#sidebar-item {
     display: flex;
-    width: 20%;
-    align-items: start;
+    transition: 0.5s;
+    width: 100%;
     gap: 8px;
     padding: 10px 12px;
-    color: #fff;
-    background-color: #dba24c;
-    border-radius: 6px;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
-    .sidebar-icon{
-        width: 16px;
-        height: 16px;
+    z-index: 1;
+    position: relative;
+    /* border-radius: 6px; */
+    /* box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); */
+
+    .sidebar-text {
+        /* display: none; */
+        color: #fff;
+        font-family: "Roboto", serif;
+        font-size: 14px;
+        line-height: 21px;
+        opacity: 0;
+        margin: auto;
+        transition: opacity 0.5s;
+    }
+    .sidebar-icon {
+        color: #000;
+        font-size: 20px;
         background-size: cover;
         /* background-position: center; */
+        margin-right: auto;
         background-repeat: no-repeat;
     }
-    .sidebar-text-tick {
-        display: none;
-        color: #fff;
-        font-family: Inter, var(--default-font);
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 21px;
+
+    &::after {
+        left: -100px;
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        /* background-color: #DBA24C; */
+        width: 90%;
+        height: 90%;
+        border-radius: 8px;
+        transition: 0.5s;
+        z-index: -1;
+    }
+    &:hover::after {
+        left: 0;
+        background-color: #DBA24C;
+    }
+    &:hover .sidebar-text {
+        opacity: 1;
     }
 }
 
-.sidebar-item-tick:hover{
-    transform: scale(1);
+#sidebar-item-tick {
+    display: flex;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    width: 110%;
+    gap: 8px;
+    padding: 10px 12px;
+    z-index: 1;
+    position: relative;
+    /* border-radius: 6px; */
+    /* box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); */
+
+    .sidebar-text-tick {
+        /* display: none; */
+        color: #fff;
+        font-family: "Roboto", serif;
+        font-size: 14px;
+        line-height: 21px;
+        opacity: 0;
+        margin: auto;
+        transition: opacity 0.5s;
+    }
+    .sidebar-icon {
+        color: #fff;
+        font-size: 20px;
+        background-size: cover;
+        /* background-position: center; */
+        margin-right: auto;
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        left: -100px;
+        content: '';
+        background-color: #DBA24C;
+        position: absolute;
+        top: 0;
+        /* background-color: #DBA24C; */
+        width: 90%;
+        height: 100%;
+        border-radius: 8px;
+        transition: 0.5s;
+        z-index: -1;
+    }
+    &:hover::after {
+        left: 0;
+        background-color: #DBA24C;
+    }
+    &:hover .sidebar-text-tick {
+        opacity: 1;
+    }
+}
+
+#sidebar-item:hover{
+    transform: scale(1.1);
+    
     transition: all ease-in-out 0.5s;
     width: 100%;
     .sidebar-text-tick{
-        animation: textLOL ease-in-out 0.5s;
-        display: block;
+        /* animation: textLOL ease-in-out 0.5s; */
+        opacity: 1;
+        transition: all ease-in-out 0.5s;
         /* position: absolute; */
     }
     .sidebar-icon{
-        display: flex;
+        display: none;
     }
 }
 
-@keyframes textLOL{
-    0%{
-        font-size: 0;
+#sidebar-item-tick:hover{
+    transform: scale(1.1);
+    
+    transition: all ease-in-out 0.5s;
+    width: 100%;
+    .sidebar-text-tick{
+        /* animation: textLOL ease-in-out 0.5s; */
+        display: block;
+        transition: all ease-in-out 0.5s;
+        /* position: absolute; */
     }
-    100%{
-        font-size: 14px;
+    .sidebar-icon{
+        display: none;
     }
 }
 
+/* Auth Buttons */
 .auth-buttons {
     margin-top: auto;
 }
@@ -312,25 +408,57 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    width: 267px;
+    width: 150px;
     height: 36px;
     padding: 10px 12px;
-    background: #fff;
+    color: #fff;
+    background-color: #007bff;
     border-radius: 6px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     margin-bottom: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    .animBoot{
+        display: none;
+    }
+}
+.auth-button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+    transition: all ease-in-out 0.5s;
+    .animBoot{
+        animation: questAnim 0.9s ease-in-out infinite;
+        margin-left: auto;
+        font-size: 20px;
+        display: block;
+    }
 }
 
-.auth-icon {
-    width: 24px;
-    height: 24px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+@keyframes questAnim {
+    0%{
+        color: #fff;
+        transform: rotate(45deg);
+    }
+    10%{
+        color: #888;
+        transform: rotate(90deg);
+    }
+    40%{
+        color: #334155;
+        transform: rotate(150deg);
+    }
+    80%{
+        color: #334155;
+        transform: rotate(250deg);
+    }
+    100%{
+        color: burlywood;
+        transform: rotate(360deg);
+    }
 }
+
 
 .auth-text {
-    color: #09090b;
+    color: #fff;
     font-family: Inter, var(--default-font);
     font-size: 14px;
     font-weight: 500;
@@ -347,9 +475,75 @@
 }
 
 .auth-link {
-    color: #00f;    
+    color: #00f;
     text-decoration: underline;
+    cursor: pointer;
 }
+
+/* Modal Styles */
+.modal {
+    display: none; /* Modal hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 300px;
+    position: relative;
+}
+  
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #000;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
 
 .visually-hidden {
     position: absolute;

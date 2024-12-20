@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+  </head>
 <body>
 <div class="music-app">
       <main class="main-content">
-        <header class="header">
+        <!-- <header class="header">
           <nav class="nav-tabs">
             <button class="nav-tab active">Music</button>
             <button class="nav-tab">Podcasts</button>
@@ -27,7 +32,7 @@
           <p class="section-subtitle">Top picks for you. Updated daily.</p>
           <div class="music-grid">
             <article class="music-card">
-              <div class="music-cover" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/5639ea88-6eb9-4107-9341-104d48ab2f6d.png);"></div>
+              <div class="music-cover" style="background-image: url('../Pictures/me-seeing-the-same-material-in-my-l2l-volume-2-from-my-v0-wo4xvc5gekkc1.webp');"></div>
               <div class="music-info">
                 <h3 class="music-title">React Rendezvous</h3>
                 <p class="music-artist">Ethan Byte</p>
@@ -118,85 +123,97 @@
               </div>
             </article>
           </div>
-        </section>
+        </section> -->
       </main>
     
       <aside class="sidebar">
         <section class="sidebar-section">
           <h2 class="sidebar-title">Discover</h2>
-          <button class="sidebar-item-tick">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/04d38b6a-1c39-4e53-b1b5-f8bd6b87563e.png);"></span>
+          <button id="sidebar-item-tick">
+            <span class="sidebar-icon"><i class="fa fa-play-circle"></i></span>
             <span class="sidebar-text-tick">Listen Now</span>
           </button>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/3e39f888-ceff-470e-aa3a-da8d2a16574b.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-globe-americas"></i></span>
             <span class="sidebar-text">Browser</span>
           </button>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/5763e6f4-8b5b-4335-a901-6bbf1861f18f.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-radio"></i></span>
             <span class="sidebar-text">Radio</span>
           </button>
         </section>
     
         <section class="sidebar-section">
           <h2 class="sidebar-title">Library</h2>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/08577c16-c0e8-4822-ac05-e56c715c923f.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-cubes-stacked"></i></span>
             <span class="sidebar-text">Playlists</span>
           </button>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/db8f367e-b293-4074-b4ff-0d8fc3d5231b.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-heart-music-camera-bolt"></i></span>
             <span class="sidebar-text">Songs</span>
           </button>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/081c0bff-e8b3-4051-886a-75f596458d0b.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
             <span class="sidebar-text">Made for you</span>
           </button>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/f23eb18f-3862-4400-ac89-b40967fab232.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-person"></i></span>
             <span class="sidebar-text">Artists</span>
           </button>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/6da5fa04-7cc0-48bb-9166-080b6ade33cf.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
             <span class="sidebar-text">Albums</span>
           </button>
         </section>
     
         <section class="sidebar-section">
           <h2 class="sidebar-title">Playlists</h2>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/7382aad3-1221-48d8-bd2e-92104bffc814.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-circle-arrow-down"></i></span>
             <span class="sidebar-text">Playlists</span>
           </button>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/c59f3da1-088b-4532-b89b-872d62122d8f.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-music"></i></span>
             <span class="sidebar-text">Songs</span>
           </button>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/e90dc0c1-1747-4ad1-a468-35d496c4e14a.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
             <span class="sidebar-text">Made for you</span>
           </button>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/cfe84cf8-e65d-4891-92c0-d022e9adfe09.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-person"></i></span>
             <span class="sidebar-text">Artists</span>
           </button>
-          <button class="sidebar-item">
-            <span class="sidebar-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/d09879e7-b0cb-4f2f-bd71-a24b51643837.png);"></span>
+          <button id="sidebar-item">
+            <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
             <span class="sidebar-text">Albums</span>
           </button>
         </section>
     
         <div class="auth-buttons">
-          <button class="auth-button">
-            <span class="auth-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/d0441b64-b37d-4c1b-9d38-7c031d0481e3.png);"></span>
-            <span class="auth-text">Sign up</span>
+          <button class="auth-button" id="authButton">
+              <span class="ahjmr"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+              <span class="auth-text">Sign Up</span>
+              <span class="animBoot"><i class="fa fa-clipboard-question"></i></span>
           </button>
-          <button class="auth-button">
-            <span class="auth-icon" style="background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/490b6b84-e78b-41f0-aa66-9fbe54cd3a3b.png);"></span>
-            <span class="auth-text">Sign in</span>
-          </button>
-        </div>
-        <p class="auth-info">Already have an account? <a href="#" class="auth-link">Log in</a></p>
+      </div>
+      <p class="auth-info">Already have an account? <a href="#" class="auth-link" id="openSignIn">Log In</a></p>
+      
+      <div id="signInModal" class="modal">
+          <div class="modal-content">
+              <span class="close-btn" id="closeModal">&times;</span>
+              <h2>Sign In</h2>
+              <form id="signInForm">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required>
+                  <button type="submit" class="submit-btn">Sign In</button>
+              </form>
+          </div>
+      </div>
+      
       </aside>
     </div>    
 </body>
