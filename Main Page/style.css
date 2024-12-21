@@ -1,3 +1,4 @@
+@import url(../sidebar.css);
 *{
     margin: 0;
     padding: 0;
@@ -20,8 +21,6 @@
 
 
 /*This is for Main Content Styles */
-/*I love you co pilot*/
-/*i want to make grid this time*/
 .main-content {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -43,360 +42,6 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-/* 
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    position: absolute;
-    width: 100%;
-    height: 953px;
-    top: 38px;
-    left: 296px;
-    padding: 24px 32px;
-    border-right: 1px solid #e4e4e7;
-    border-left: 1px solid #e4e4e7;       //changes made here
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.nav-tabs {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    background: #f1f5f9;
-    border-radius: 6px;
-}
-
-.nav-tab {
-    padding: 6px 12px;
-    border-radius: 3px;
-    font-family: Inter, var(--default-font);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    text-align: center;
-    color: #334155;
-}
-.sidebar .user .bold {
-    opacity: 0;
-    position: absolute;
-    right: 25%;
-    transition: my_key 0.5s ease-in-out;
-}
-
-.nav-tab.active {
-    background: #fff;
-    color: #0f172a;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
-}
-
-.add-music-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    background: #3bd172;
-    border-radius: 6px;
-    color: #fff;
-    font-family: Inter, var(--default-font);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 24px;
-}
-
-.add-music-icon {
-    width: 16px;
-    height: 16px;
-    background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2024-12-11/9fba98d8-462c-4236-b98f-8c31caf8b09f.png) no-repeat center;
-    background-size: cover;
-}
-
-.section-title {
-    color: #f2f2f2;
-    font-family: Inter, var(--default-font);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 8px;
-}
-
-.section-subtitle {
-    color: #71717a;
-    font-family: Inter, var(--default-font);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-}
-
-.music-grid {
-    display: flex;
-    gap: 16px;
-    overflow: hidden;
-}
-
-.music-card {
-    width: 251px;
-}
-
-.music-cover {
-    width: 251px;
-    height: 336px;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.music-info {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.music-title {
-    color: #f2f2f2;
-    font-family: Inter, var(--default-font);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-}
-
-.music-artist {
-    color: #71717a;
-    font-family: Inter, var(--default-font);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1;
-} */
-
-
-
-/*This is for Sidebar Styles */
-
-.sidebar ~ .main-content{
-    width: calc(100% - 300px);
-}
-
-.sidebar {
-    position: absolute;
-    width: 200px;
-    height: calc(100vh - 38px); /* Adjust based on your layout's header height */
-    top: 0; /* Adjust as needed */
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    overflow-y: auto; /* Ensures scrolling works for overflowing content */
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 100%;
-}
-.sidebar::-webkit-scrollbar {
-    width: 3px;
-}
-
-.sidebar::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-
-.sidebar::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-
-.sidebar-section{
-    gap: 4px;
-    width: 100%;
-    padding: 10px;
-    border-right: 1px solid #e4e4e7;
-}
-
-.sidebar-title {
-    color: #f2f2f2;
-    font-family: Inter, var(--default-font);
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 27px;
-    padding: 10px 12px;
-}
-/*
-.sidebar-item {
-    display: flex;
-    width: 100%;
-    gap: 8px;
-    padding: 10px 12px;
-    border-radius: 6px;             originally a cmd / remove
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);   originally a cmd / remove
-    .sidebar-icon{
-        display: none;
-        width: 16px;
-        height: 16px;
-        background-size: cover;
-        background-position: center;    originally a cmd / remove
-        margin: auto;
-        background-repeat: no-repeat;
-    }
-    .sidebar-text{
-        display: none;          originally a cmd / remove
-        color: #fff;
-        font-family: "Roboto" , serif;
-        font-size: 14px;
-        line-height: 21px;
-        margin: auto;
-    }
-}
-*/
-
-#sidebar-item {
-    display: flex;
-    transition: 0.5s;
-    width: 100%;
-    gap: 8px;
-    padding: 10px 12px;
-    z-index: 1;
-    position: relative;
-    /* border-radius: 6px; */
-    /* box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); */
-
-    .sidebar-text {
-        /* display: none; */
-        color: #fff;
-        font-family: "Roboto", serif;
-        font-size: 14px;
-        line-height: 21px;
-        opacity: 0;
-        margin: auto;
-        transition: opacity 0.5s;
-    }
-    .sidebar-icon {
-        color: #000;
-        font-size: 20px;
-        background-size: cover;
-        /* background-position: center; */
-        margin-right: auto;
-        background-repeat: no-repeat;
-    }
-
-    &::after {
-        left: -100px;
-        content: '';
-        background-color: #fff;
-        position: absolute;
-        top: 0;
-        /* background-color: #DBA24C; */
-        width: 90%;
-        height: 90%;
-        border-radius: 8px;
-        transition: 0.5s;
-        z-index: -1;
-    }
-    &:hover::after {
-        left: 0;
-        background-color: #DBA24C;
-    }
-    &:hover .sidebar-text {
-        opacity: 1;
-    }
-}
-
-#sidebar-item-tick {
-    display: flex;
-    margin-bottom: 5px;
-    transition: 0.5s;
-    width: 110%;
-    gap: 8px;
-    padding: 10px 12px;
-    z-index: 1;
-    position: relative;
-    /* border-radius: 6px; */
-    /* box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); */
-
-    .sidebar-text-tick {
-        /* display: none; */
-        color: #fff;
-        font-family: "Roboto", serif;
-        font-size: 14px;
-        line-height: 21px;
-        opacity: 0;
-        margin: auto;
-        transition: opacity 0.5s;
-    }
-    .sidebar-icon {
-        color: #fff;
-        font-size: 20px;
-        background-size: cover;
-        /* background-position: center; */
-        margin-right: auto;
-        background-repeat: no-repeat;
-    }
-
-    &::after {
-        left: -100px;
-        content: '';
-        background-color: #DBA24C;
-        position: absolute;
-        top: 0;
-        /* background-color: #DBA24C; */
-        width: 90%;
-        height: 100%;
-        border-radius: 8px;
-        transition: 0.5s;
-        z-index: -1;
-    }
-    &:hover::after {
-        left: 0;
-        background-color: #DBA24C;
-    }
-    &:hover .sidebar-text-tick {
-        opacity: 1;
-    }
-}
-
-#sidebar-item:hover{
-    transform: scale(1.1);
-    
-    transition: all ease-in-out 0.5s;
-    width: 100%;
-    .sidebar-text-tick{
-        /* animation: textLOL ease-in-out 0.5s; */
-        opacity: 1;
-        transition: all ease-in-out 0.5s;
-        /* position: absolute; */
-    }
-    .sidebar-icon{
-        display: none;
-    }
-}
-
-#sidebar-item-tick:hover{
-    transform: scale(1.1);
-    
-    transition: all ease-in-out 0.5s;
-    width: 100%;
-    .sidebar-text-tick{
-        /* animation: textLOL ease-in-out 0.5s; */
-        display: block;
-        transition: all ease-in-out 0.5s;
-        /* position: absolute; */
-    }
-    .sidebar-icon{
-        display: none;
-    }
 }
 
 /* Auth Buttons */
@@ -502,14 +147,13 @@
     position: relative;
 }
   
-
 .close-btn {
     position: absolute;
     top: 10px;
-    right: 10px;
+    margin-right: auto;
     cursor: pointer;
     font-size: 18px;
-    color: #fff;
+    color: #000;
 }
 
 input {
@@ -530,6 +174,40 @@ input {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
+}
+
+.input-box{
+    position: relative;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.input-box input{
+    flex: 1;
+    border: 0;
+    outline: none;
+    /* padding: 15px 20px; */
+    color: #000;
+    background-color: #ddd;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+.input-box :is(label, i){
+    position: absolute;
+    right: 5px;
+    color: #000;
+    transition: all 0.2s ease;
+}
+
+.input-box i{
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .submit-btn:hover {
@@ -555,4 +233,8 @@ input {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+h2{
+    margin-bottom: 10px;
 }
