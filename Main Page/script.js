@@ -54,49 +54,50 @@
 
 // Get elements
 const authButton = document.getElementById('authButton');
-const signInModal = document.getElementById('signInModal');
+const signUpModal = document.getElementById('signUpModal');
 const closeModal = document.getElementById('closeModal');
-const signInForm = document.getElementById('signInForm');
+const signUpForm = document.getElementById('signUpForm');
 
 // State to track sign-in status
-let isSignedIn = false;
+let isSignedUp = false;
 
 // Open modal
 authButton.addEventListener('click', () => {
-    if (isSignedIn) {
+    if (isSignedUp) {
         // If already signed in, log out
-        isSignedIn = false;
-        authButton.textContent = 'Sign In';
+        isSignedUp = false;
+        authButton.textContent = 'Sign Up';
         alert('You have logged out!');
     } else {
         // Open the modal
-        signInModal.style.display = 'flex';
+        signUpModal.style.display = 'flex';
     }
 });
 
 // Close modal
 closeModal.addEventListener('click', () => {
-    signInModal.style.display = 'none';
+    signUpModal.style.display = 'none';
 });
 
 // Handle form submission
-signInForm.addEventListener('submit', (event) => {
+signUpForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const email = document.getElementById('email').value;
+    // const email = document.getElementById('email').value;
+    const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
     if (email && password) {
-        isSignedIn = true;
+        isSignedUp = true;
         authButton.textContent = 'Log Out';
-        alert(`Signed in as ${email}`);
-        signInModal.style.display = 'none';
-        signInForm.reset();
+        alert(`Signed up as ${username}`);
+        signUpModal.style.display = 'none';
+        signUpForm.reset();
     }
 });
 
 // Close modal if clicking outside
 window.addEventListener('click', (event) => {
-    if (event.target === signInModal) {
-        signInModal.style.display = 'none';
+    if (event.target === signUpModal) {
+        signUpModal.style.display = 'none';
     }
 });

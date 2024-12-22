@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="../Main Page/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -15,7 +14,23 @@
 <body>
 <div class="music-app">
       <main class="main-content">
-        
+        <div class="firstContent">
+          <div class="tabs">
+            <button class="tab active">Music</button>
+            <button class="tab">Podcasts</button>
+            <button class="tab">Live</button>
+          </div>
+          <div class="addMusic">
+            <span><i class="fa fa-circle-plus"></i></span>
+            <span>Add Music</span>
+          </div>
+        </div>
+        <div class="secondContent">
+          
+        </div>
+        <div class="lastContent">
+
+        </div>
       </main>
     
       <aside class="sidebar">
@@ -88,34 +103,52 @@
               <span class="ahjmr"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
               <span class="auth-text">Sign Up</span>
               <span class="animBoot"><i class="fa fa-clipboard-question"></i></span>
-          </button>
-      </div>
-      <p class="auth-info">Already have an account? <a href="#" class="auth-link" id="openSignIn">Log In</a></p>
-      
-      <div id="signInModal" class="modal">
-          <div class="modal-content">
-              <span class="close-btn" id="closeModal"><i class="fa fa-close"></i></span>
-              <h2>Sign In</h2>
-              <form id="signInForm">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required placeholder="Please enter your email address" style="background-color: #ddd;">
-                  <label for="password">Password:</label>
-                  <div class="input-box">
-                    <input type="password" id="password" name="password" required placeholder="Please enter your password">
-                    <i class="fa fa-eye-slash toggle"></i>
-                  </div>
-                  <label for="confirmed-password">Confrim Password:</label>
-                  <div class="input-box">
-                    <input type="password" id="confirmed-password" name="confirmed-password" required placeholder="Please enter your password">
-                    <i class="fa fa-eye-slash toggle"></i>
-                  </div>
-                  <button type="submit" class="submit-btn">Sign In</button>
-              </form>
-          </div>
-      </div>
+            </button>
+        </div>
+        <p class="auth-info">Already have an account? <a href="#" class="auth-link" id="openSignIn">Log In</a></p>
       </aside>
+      
+        <div id="signUpModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" id="closeModal"><i class="fa fa-close"></i></span>
+            <h2>Sign Up</h2>
+            <form id="signUpForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Please enter your email address" style="background-color: #ddd;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required placeholder="Please enter your username" style="background-color: #ddd;">
+                <label for="password">Password:</label>
+                <div class="input-box">
+                  <input type="password" id="password" name="password" required placeholder="Please enter your password">
+                  <i class="fa fa-eye-slash toggle"></i>
+                </div>
+                <label for="confirmed-password">Confrim Password:</label>
+                <div class="input-box">
+                  <input type="password" id="confirmed-password" name="confirmed-password" required placeholder="Please enter your password">
+                  <i class="fa fa-eye-slash toggle"></i>
+                </div>
+                <button type="submit" class="submit-btn">Sign In</button>
+            </form>
+          </div>
+        </div>
+        <div id="signInModallie" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" id="closeModallie"><i class="fa fa-close"></i></span>
+            <h2>Log In</h2>
+            <form id="signInForm">
+              <label for="email">Email:</label>
+                <input type="email" id="user_email" name="email" required placeholder="Please enter your email address" style="background-color: #ddd;">
+                <label for="password">Password:</label>
+                <div class="input-box">
+                  <input type="password" id="pass" name="password" required placeholder="Please enter your password">
+                  <i class="fa fa-eye-slash toggle"></i>
+                </div>
+                <button type="submitting" class="submit-btn">Log In</button>
+          </div>
+        </div>
     </div>
-    <script src="../script.js"></script>
-    <script src="../Main Page/form.js"></script>
+    <script src="../Main Page/script.js"></script>
+    <script src="../Main Page/SignUpform.js"></script>
+    <script src="../Main Page/SignInForm.js"></script>
   </body>
 </html>

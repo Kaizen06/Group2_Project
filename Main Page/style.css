@@ -23,25 +23,95 @@
 /*This is for Main Content Styles */
 .main-content {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-rows: 0.3fr 2fr 1fr;
     gap: 40px;
     position: absolute;
-    width: 80%;
+    width: 85%;
     height: 100vh;
     background-color: #888;
     /* top: 38px; */
     /* left: 220px; */
-    transform: translate(298px, 20px);
+    transform: translate(200px, 20px);
     padding: 24px 32px;
     border-right: 1px solid #e4e4e7;
     border-left: 1px solid #e4e4e7;       
+    overflow-y: auto;
 }
 
-.header {
+.firstContent{
     display: flex;
+    grid-row: 1;
+    gap: 40px;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    .addMusic{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 5rem;
+        padding: 8px 10px;
+        background-color: #3BD172;
+        border-radius: 4px;
+    }
+}
+/* Container for the tabs */
+.tabs {
+    display: flex;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    width: fit-content;
+    padding: 2px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Individual tab buttons */
+.tab {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    color: #6c757d;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Active tab style */
+.tab.active {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Hover effect for tabs */
+.tab:hover {
+    background-color: #e9ecef;
+    color: #000000;
+}
+
+/* Removing focus outline */
+.tab:focus {
+    outline: none;
+}
+
+
+.secondContent {
+    background-color: #0056b3;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+    gap: 40px;
+}
+
+.lastContent {
+    background-color: #0056b3;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 4fr));
+    gap: 40px;
 }
 
 /* Auth Buttons */
@@ -154,6 +224,7 @@
     cursor: pointer;
     font-size: 18px;
     color: #000;
+    z-index: 1000;
 }
 
 input {
@@ -174,6 +245,7 @@ input {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin-top: 10px;
 }
 
 .input-box{
