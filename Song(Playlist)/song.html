@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="../Song(Playlist)/song.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+    <div class="music-app">
+        <main class="main-content">
+            <div class="firstContent">
+                <div class="tabs">
+                  <button class="tab active">Music</button>
+                  <button class="tab">Podcasts</button>
+                  <button class="tab">Live</button>
+                </div>
+                <div class="addMusic">
+                  <span><i class="fa fa-circle-plus"></i></span>
+                  <span>Add Music</span>
+                </div>
+              </div>
+              <div class="secondContent">
+                <header class="head">
+                  <h1>We share song that keep user entertain!</h1>
+                  <p>Songs are not limited to a human liking.</p>
+                </header>
+              </div>
+              <div class="thirdContent">
+                <div class="one_bar">
+                  <div class="num">#</div>
+                  <div class="title">Title</div>
+                  <div class="dateAdded">Date Added</div>
+                  <div class="time"><i class="fa fa-clock"></i></div>
+                </div>
+                <div class="two_bar">
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                  <section class="song_display"></section>
+                </div>
+              </div>
+        </main>
+        <aside class="sidebar">
+            <section class="sidebar-section">
+              <h2 class="sidebar-title">Discover</h2>
+              <button class="sidebar-item" onclick="window.location.href = '../Main%20Page/index.html'">
+                <span class="sidebar-icon"><i class="fa fa-play-circle"></i></span>
+                <span class="sidebar-text">Listen Now</span>
+              </button>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-globe-americas"></i></span>
+                <span class="sidebar-text">Browser</span>
+              </button>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-radio"></i></span>
+                <span class="sidebar-text">Radio</span>
+              </button>
+            </section>
+        
+            <section class="sidebar-section">
+              <h2 class="sidebar-title">Library</h2>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-cubes-stacked"></i></span>
+                <span class="sidebar-text">Playlists</span>
+              </button>
+              <button class="sidebar-item-tick" onclick="window.location.href = '../Song(Playlist)/song.html'">
+                <span class="sidebar-icon"><i class="fa fa-heart-music-camera-bolt"></i></span>
+                <span class="sidebar-text-tick">Songs</span>
+              </button>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
+                <span class="sidebar-text">Made for you</span>
+              </button>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-person"></i></span>
+                <span class="sidebar-text">Artists</span>
+              </button>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
+                <span class="sidebar-text">Albums</span>
+              </button>
+            </section>
+        
+            <section class="sidebar-section">
+              <h2 class="sidebar-title">Playlists</h2>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-circle-arrow-down"></i></span>
+                <span class="sidebar-text">Playlists</span>
+              </button>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-music"></i></span>
+                <span class="sidebar-text">Songs</span>
+              </button>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
+                <span class="sidebar-text">Made for you</span>
+              </button>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-person"></i></span>
+                <span class="sidebar-text">Artists</span>
+              </button>
+              <button class="sidebar-item">
+                <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
+                <span class="sidebar-text">Albums</span>
+              </button>
+            </section>
+        
+            <div class="auth-buttons">
+              <button class="auth-button" id="authButton">
+                  <span class="ahjmr"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                  <span class="auth-text">Sign Up</span>
+                  <span class="animBoot"><i class="fa fa-clipboard-question"></i></span>
+                </button>
+            </div>
+            <p class="auth-info">Already have an account? <a href="#" class="auth-link" id="openSignIn">Log In</a></p>
+          </aside>
+          
+            <div id="signUpModal" class="modal">
+              <div class="modal-content">
+                <span class="close-btn" id="closeModal"><i class="fa fa-close"></i></span>
+                <h2>Sign Up</h2>
+                <form id="signUpForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Please enter your email address" style="background-color: #ddd;">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required placeholder="Please enter your username" style="background-color: #ddd;">
+                    <label for="password">Password:</label>
+                    <div class="input-box">
+                      <input type="password" id="password" name="password" required placeholder="Please enter your password">
+                      <i class="fa fa-eye-slash toggle"></i>
+                    </div>
+                    <label for="confirmed-password">Confrim Password:</label>
+                    <div class="input-box">
+                      <input type="password" id="confirmed-password" name="confirmed-password" required placeholder="Please enter your password">
+                      <i class="fa fa-eye-slash toggle"></i>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+              </div>
+            </div>
+            <div id="signInModallie" class="modal">
+              <div class="modal-content">
+                <span class="close-btn" id="closeModallie"><i class="fa fa-close"></i></span>
+                <h2>Log In</h2>
+                <form id="signInForm">
+                  <label for="email">Email:</label>
+                    <input type="email" id="user_email" name="email" required placeholder="Please enter your email address" style="background-color: #ddd;">
+                    <label for="password">Password:</label>
+                    <div class="input-box">
+                      <input type="password" id="pass" name="password" required placeholder="Please enter your password">
+                      <i class="fa fa-eye-slash toggle"></i>
+                    </div>
+                    <button type="submitting" class="submit-btn">Log In</button>
+              </div>
+            </div>
+    </div>
+</body>
+</html>
