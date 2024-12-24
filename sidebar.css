@@ -109,7 +109,7 @@
     &:hover::after {
         overflow: hidden;
         left: 0;
-        background-color: #DBA24C;
+        background-color: #3bd172;
     }
     &:hover .sidebar-text {
         opacity: 1;
@@ -152,7 +152,7 @@
     &::after {
         left: -100px;
         content: '';
-        background-color: #DBA24C;
+        background-color: #3bd172;
         position: absolute;
         top: 0;
         /* background-color: #DBA24C; */
@@ -165,7 +165,7 @@
     &:hover::after {
         overflow: hidden;
         left: 0;
-        background-color: #DBA24C;
+        background-color: #3bd172;
     }
     &:hover .sidebar-text-tick {
         opacity: 1;
