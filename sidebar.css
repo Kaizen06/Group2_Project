@@ -7,7 +7,7 @@
 }
 
 .sidebar {
-    position: absolute;
+    position: fixed; /* Changed */
     width: 200px;
     height: calc(100vh - 38px); /* Adjust based on your layout's header height */
     top: 0; /* Adjust as needed */
@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     padding: 10px;
-    overflow-y: auto; /* Ensures scrolling works for overflowing content */
+    overflow-y: auto;
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 100%;
@@ -40,9 +40,10 @@
 
 .sidebar-section{
     gap: 4px;
-    width: 100%;
+    width: 100%; /* Changed */
     padding: 10px;
     border-right: 1px solid #e4e4e7;
+
 }
 
 .sidebar-title {
@@ -50,6 +51,9 @@
     text-transform: uppercase;
     color: #000;
     font-size: 14px;
+    color: #f2f2f2; /*discover, libray and playlist*/
+    font-family: Inter, var(--default-font);
+    font-size: 18px;
     font-weight: 600;
     line-height: 27px;
     padding: 10px 12px;
@@ -105,7 +109,7 @@
     &:hover::after {
         overflow: hidden;
         left: 0;
-        background-color: #3BD172;
+        background-color: #DBA24C;
     }
     &:hover .sidebar-text {
         opacity: 1;
@@ -148,7 +152,7 @@
     &::after {
         left: -100px;
         content: '';
-        background-color: #3BD172;
+        background-color: #DBA24C;
         position: absolute;
         top: 0;
         /* background-color: #DBA24C; */
@@ -161,7 +165,7 @@
     &:hover::after {
         overflow: hidden;
         left: 0;
-        background-color: #3BD172;
+        background-color: #DBA24C;
     }
     &:hover .sidebar-text-tick {
         opacity: 1;
@@ -284,7 +288,7 @@
 
 /* Modal Styles */
 .modal {
-    display: none; /* Modal hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -294,19 +298,21 @@
     justify-content: center;
     align-items: center;
 }
-  
+
 .modal-content {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 20px;
     border-radius: 8px;
     width: 90%;
     max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
     position: relative;
     h2{
         font-family: 'Roboto', sans-serif;
     }
+    border: 1px solid rgb(75, 67, 67);
+    color: #fff;
 }
-  
 
 .close-btn {
     position: absolute;
@@ -314,7 +320,7 @@
     right: 10px;
     cursor: pointer;
     font-size: 18px;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 input {
@@ -323,28 +329,30 @@ input {
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
-    color: #000;
+    color:#000000;
+    background-color: #fff;
 }
 
 .submit-btn {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
-    color: #fff;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 .submit-btn:hover {
     background-color: #0056b3;
 }
-
 /* Responsive Design */
 @media (max-width: 600px) {
-    .modal-content {
-        width: 90%;
-        font-size: 14px;
+    .menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border: none;
     }
 }
+/* Menu Styles */

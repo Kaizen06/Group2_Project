@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+       <!---Menu-->
+       <div>
+        <aside class="sidebar">
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Discover</h2>
+            <button id="sidebar-item-tick">
+              <span class="sidebar-icon"><i class="fa fa-play-circle"></i></span>
+              <span class="sidebar-text-tick">Listen Now</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-globe-americas"></i></span>
+              <span class="sidebar-text">Browser</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-radio"></i></span>
+              <span class="sidebar-text">Radio</span>
+            </button>
+          </section>
+      
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Library</h2>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-cubes-stacked"></i></span>
+              <span class="sidebar-text">Playlists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-heart-music-camera-bolt"></i></span>
+              <span class="sidebar-text">Songs</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
+              <span class="sidebar-text">Made for you</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-person"></i></span>
+              <span class="sidebar-text">Artists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
+              <span class="sidebar-text">Albums</span>
+            </button>
+          </section>
+      
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Playlists</h2>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-circle-arrow-down"></i></span>
+              <span class="sidebar-text">Playlists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-music"></i></span>
+              <span class="sidebar-text">Songs</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
+              <span class="sidebar-text">Made for you</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-person"></i></span>
+              <span class="sidebar-text">Artists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
+              <span class="sidebar-text">Albums</span>
+            </button>
+          </section>
+      
+          <div class="auth-buttons">
+            <button class="auth-button" id="authButton">
+                <span class="ahjmr"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                <span class="auth-text">Sign Up</span>
+                <span class="animBoot"><i class="fa fa-clipboard-question"></i></span>
+            </button>
+        </div>
+        <p class="auth-info">Already have an account? <a href="#" class="auth-link" id="openSignIn">Log In</a></p>
+        
+        <div id="signInModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h2>Sign In</h2>
+                <form id="signInForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+            </div>
+        </div>
+        </aside>
+      </div>
+      <script src="script.js"></script>
+
+    <!---playlist-->
+    <div class="span">
+        <div class="MFY">
+            <h1>Made For You</h1> 
+            <img src="Disc.png" alt="Page Image">
+            <!---<div class="title">
+                <p>Title</p>
+                <p>Played</p>
+            </div>--->
+        </div>
+        <hr>
+        <div class="box">
+            <div class="box1">
+                <img src="https://cdn-images.dzcdn.net/images/cover/967ac8605268db88a1e597394115365d/1900x1900-000000-80-0-0.jpg" alt="Page Image">
+                <div class="text-container">
+                    <p class="title">Born To Die</p>
+                </div>
+            </div>
+        
+            <div class="box2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR73CSX9lW_Go5pYxrt4NRnNr8lJfty0x-0Yw&s" alt="Page Image">
+                <div class="text-container">
+                    <p class="title">Party Favor</p>
+                </div>
+            </div>
+        
+            <div class="box3">
+                <img src="https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452" alt="Page Image">
+                <div class="text-container">
+                    <p class="title">Star Boy</p>
+                </div>
+            </div>
+
+            <div class="box4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCN81lXqNPxeBP79VnUZbiuUalihwJyFivOg&s" alt="Page Image">
+                <div class="text-container">
+                    <p class="title">IDOL</p>
+                </div>
+            </div>
+
+            <div class="box5">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoHs-h_fvCD2DNCfzc-V-xIZEN_6TpedwG2g&s" alt="Page Image">
+                <div class="text-container">
+                    <p class="title">Blue</p>
+                </div>
+            </div>
+
+            <div class="box6">
+                <img src="https://i1.sndcdn.com/artworks-000295101678-0tv98k-t500x500.jpg" alt="Page Image">
+                <div class="text-container">
+                    <p class="title">Cookie</p>
+                </div>
+            </div>
+
+            <div class="box5">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2u5nrYKoTVL8UMkOHx6TbOBFY_QYYLGrB2-8sY4te_vRie6pv_2_Rbun0kMJxpm4L0-c&usqp=CAU" alt="Page Image">
+                <div class="text-container">
+                    <p class="title">Escapism</p>
+                </div>
+            </div>
+
+            <div class="box6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvLCd6HybGGYkoSaU87u5IaNt3bb_FaeNE0w&s" alt="Page Image">
+                <div class="text-container">
+                    <p class="title">Toxic Till The End</p>
+                </div>
+            </div>
+
+            <div class="box7">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbumCNreebR78LLJbGaKuO7ERdMvP3RLariA&s" alt="Page Image">
+              <div class="text-container">
+                  <p class="title">I Am a Girl like you</p>
+              </div>
+          </div>
+
+          <div class="box8">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlavfH1PpgTiVP6T_IGp2ebfoNzyjFg7scUQ&s" alt="Page Image">
+              <div class="text-container">
+                  <p class="title">We don't talk anymore</p>
+              </div>
+          </div>
+
+          <div class="box9">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8OyUwtybckTYcGj_POy4v6tWDwuman3_cmQ&s" alt="Page Image">
+              <div class="text-container">
+                  <p class="title">ไม่บอกเธอ</p>
+              </div>
+          </div>
+
+          <div class="box10">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgTqdvTXLCEO_N7d1nedBUDcLCwzHlwPFwKw&s" alt="Page Image">
+              <div class="text-container">
+                  <p class="title">Into The Unknown</p>
+              </div>
+          </div>
+
+          <div class="box11">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvLCd6HybGGYkoSaU87u5IaNt3bb_FaeNE0w&s" alt="Page Image">
+            <div class="text-container">
+                <p class="title">Toxic Till The End</p>
+            </div>
+        </div>
+  
+        <div class="box12">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoklRQPKhHjesDXDfZ2ADBgdgUo0zKwGTXUg&s" alt="Page Image">
+            <div class="text-container">
+                <p class="title">Friend Zone</p>
+            </div>
+        </div>
+  
+        <div class="box13">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDxAKZXTfAcmLxMdoDFY_u4CPwk6NLn4WWIg&s" alt="Page Image">
+          <div class="text-container">
+            <p class="title">Friend Zone</p>
+          </div>
+      </div>
+      
+        <div class="box14">
+          <img src="https://i1.sndcdn.com/artworks-000295101678-0tv98k-t500x500.jpg" alt="Page Image">
+          <div class="text-container">
+            <p class="title">Friend Zone</p>
+            </div>
+          </div>
+          
+          </div>  
+        </div>
+    </div>
+</body>
+</html>

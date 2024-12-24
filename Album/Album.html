@@ -6,58 +6,109 @@
     <title>Album</title>
     <link rel="stylesheet" href="Album_Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 <body>
     <!---Menu-->
-    <aside class="menu">
-        <nav>
-            <header>Discover</header>
-            <div class="button">Listen Now</div>
-            <a href="/Browse/Browse.html"><div class="button">Browse</div></a>
-            <div class="button">Radio</div>
-        </nav>
+    <div>
+        <aside class="sidebar">
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Discover</h2>
+            <button id="sidebar-item-tick">
+              <span class="sidebar-icon"><i class="fa fa-play-circle"></i></span>
+              <span class="sidebar-text-tick">Listen Now</span>
+            </button>
+            <button id="sidebar-item" onclick="window.location.href='/Browse/Browse.html';">
+              <span class="sidebar-icon"><i class="fa fa-globe-americas"></i></span>
+              <span class="sidebar-text">Browser</span>
+            </button>
 
-        <nav>
-            <header>Library</header>
-            <div class="button">Playlists</div>
-            <div class="button">Songs</div>
-            <div class="button">Made for you</div>
-            <div class="button">Artists</div>
-            <a href="Album.html"><div class="button">Albums</div></a>
-        </nav>
-
-        <nav>
-            <header>My Playlists</header>
-            <div class="button">Playlists</div>
-            <div class="button">Songs</div>
-            <div class="button">Made for you</div>
-            <div class="button">Artists</div>
-            <a href="Album.html"><div class="button">Albums</div></a>
-        </nav>
-        <!-- Sign In/Log Out Button -->
-        <nav class="shift">
-            <button id="authButton" class="auth-button">Sign In</button>
-        </nav>
-    </aside>
-
-    <!-- Modal for Sign In -->
-    <div id="signInModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModal">&times;</span>
-            <h2>Sign In</h2>
-            <form id="signInForm">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit" class="submit-btn">Sign In</button>
-            </form>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-radio"></i></span>
+              <span class="sidebar-text">Radio</span>
+            </button>
+          </section>
+      
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Library</h2>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-cubes-stacked"></i></span>
+              <span class="sidebar-text">Playlists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-heart-music-camera-bolt"></i></span>
+              <span class="sidebar-text">Songs</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
+              <span class="sidebar-text">Made for you</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-person"></i></span>
+              <span class="sidebar-text">Artists</span>
+            </button>
+            
+            <button id="sidebar-item" onclick="window.location.href='/Album/Album.html';">
+              <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
+              <span class="sidebar-text">Albums</span>
+            </button>
+          </section>
+      
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Playlists</h2>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-circle-arrow-down"></i></span>
+              <span class="sidebar-text">Playlists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-music"></i></span>
+              <span class="sidebar-text">Songs</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
+              <span class="sidebar-text">Made for you</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-person"></i></span>
+              <span class="sidebar-text">Artists</span>
+            </button>
+            <button id="sidebar-item" onclick="window.location.href='/Album/Album.html';">
+              <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
+              <span class="sidebar-text">Albums</span>
+            </button>
+          </section>
+      
+          <div class="auth-buttons">
+            <button class="auth-button" id="authButton">
+                <span class="ahjmr"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                <span class="auth-text">Sign Up</span>
+                <span class="animBoot"><i class="fa fa-clipboard-question"></i></span>
+            </button>
         </div>
-    </div>
-<script src="/script.js"></script>
+        <p class="auth-info">Already have an account? <a href="#" class="auth-link" id="openSignIn">Log In</a></p>
+        
+        <div id="signInModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h2>Sign In</h2>
+                <form id="signInForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+            </div>
+        </div>
+        </aside>
+      </div>
+      <script src="/script.js"></script>
 
 <main>
-    <div>
+    <div class="grid">
         <div>
             <h1 class="profile h1">Liked Album</h1>
             <div class="align">
@@ -75,43 +126,39 @@
                 <p>Release Date: 2021</p>
             </div>
         </section>
+
         <section class="album-showcase">
-            <img src="/Album/Album_Image/Album2.jpg" alt="Album2" class="album-cover" />
+            <img src="/Album/Album_Image/The Rewritten Memories.jpg" alt="Album2" class="album-cover" />
             <div class="album-details">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
+                <h1>The Rewritten Memories</h1>
                 <p>Release Date: 2021</p>
             </div>
         </section>
         <section class="album-showcase">
-            <img src="/Album/Album_Image/Album2.jpg" alt="Album2" class="album-cover" />
+            <img src="/Album/Album_Image/Yiruma_First_Love.jpg" alt="Album2" class="album-cover" />
             <div class="album-details">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
-                <p>Release Date: 2024</p>
+                <h1>FIrst Love</h1>
+                <p>Release Date: 2001</p>
             </div>
         </section>
         <section class="album-showcase">
-            <img src="/Album/Album_Image/Album2.jpg" alt="Album2" class="album-cover" />
+            <img src="/Album/Album_Image/Yiruma The Best Winter.jpg" alt="Album2" class="album-cover" />
             <div class="album-details">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
-                <p>Release Date: 2024</p>
+                <h1>Yiruma The Best Winter</h1>
+                <p>Release Date: 2016</p>
             </div>
         </section>
         <section class="album-showcase">
-            <img src="/Album/Album_Image/Album2.jpg" alt="Album2" class="album-cover" />
+            <img src="/Album/Album_Image/Piano.jpg" alt="Album2" class="album-cover" />
             <div class="album-details">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
-                <p>Release Date: 2024</p>
+                <h1>Piano</h1>
+                <p>Release Date: 2015</p>
             </div>
         </section>
         <section class="album-showcase">
-            <img src="/Album/Album_Image/Album2.jpg" alt="Album2" class="album-cover" />
+            <img src="/Album/Album_Image/Piano Serenade.jpg" alt="Album2" class="album-cover" />
             <div class="album-details">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
+                <h1>Piano Serenade</h1>
                 <p>Release Date: 2024</p>
             </div>
         </section>
@@ -119,66 +166,62 @@
     </div>
 
     <div>
-        <div>
-            <img src="/Album/Album_Image/Yiruma_Album2.jpg" alt="Profile" class="profile">
+        <div class="align">
+            <img src="/Album/Album_Image/YOASOBI3.jpg" alt="Profile" class="profile">
+            <h3>YOASOBI<br><small>Album Collection</small></h3>
         </div>
+
         <div class="scroll-container">
         <section class="album-showcase">
-            <img src="/Album/Album_Image/Yirima_Albumjpg.jpg" alt="Album2" class="album-cover" />
+            <img src="/Album/Album_Image/E-SIDE3.jpg" alt="Album2" class="album-cover" />
             <div class="album-details">
-                <h1>Solo</h1>
+                <h1>E-SIDE 3</h1>
+                <p>Release Date: 2024</p>
+            </div>
+        </section>
+        <section class="album-showcase">
+            <img src="/Album/Album_Image/THE BOOK3.jpg" alt="Album2" class="album-cover" />
+            <div class="album-details">
+                <h1>THE BOOK 3</h1>
+                <p>Release Date: 2023</p>
+            </div>
+        </section>
+        <section class="album-showcase">
+            <img src="/Album/Album_Image/E-SIDE2.jpg" alt="Album2" class="album-cover" />
+            <div class="album-details">
+                <h1>E-SIDE 2</h1>
+                <p>Release Date: 2022</p>
+            </div>
+        </section>
+        <section class="album-showcase">
+            <img src="/Album/Album_Image/THE BOOK2.jpg" alt="Album2" class="album-cover" />
+            <div class="album-details">
+                <h1>THE BOOK 2</h1>
                 <p>Release Date: 2021</p>
             </div>
         </section>
         <section class="album-showcase">
-            <img src="/Album/Album_Image/Album2.jpg" alt="Album2" class="album-cover" />
+            <img src="/Album/Album_Image/E-SIDE.jpg" alt="Album2" class="album-cover" />
             <div class="album-details">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
+                <h1>E-SIDE</h1>
                 <p>Release Date: 2021</p>
             </div>
         </section>
         <section class="album-showcase">
-            <img src="/Album/Album_Image/Album2.jpg" alt="Album2" class="album-cover" />
+            <img src="/Album/Album_Image/THE BOOK.jpg" alt="Album2" class="album-cover" />
             <div class="album-details">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
-                <p>Release Date: 2024</p>
-            </div>
-        </section>
-        <section class="album-showcase">
-            <img src="/Album/Album_Image/Album2.jpg" alt="Album2" class="album-cover" />
-            <div class="album-details">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
-                <p>Release Date: 2024</p>
-            </div>
-        </section>
-        <section class="album-showcase">
-            <img src="/Album/Album_Image/Album2.jpg" alt="Album2" class="album-cover" />
-            <div class="album-details">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
-                <p>Release Date: 2024</p>
-            </div>
-        </section>
-        <section class="album-showcase">
-            <img src="/Album/Album_Image/Album2.jpg" alt="Album2" class="album-cover" />
-            <div class="album-details">
-                <h1>Album Title</h1>
-                <h2>Artist Name</h2>
-                <p>Release Date: 2024</p>
+                <h1>THE BOOK</h1>
+                <p>Release Date: 2021</p>
             </div>
         </section>
     </div>
     </div>
 </main>
-    <footer>
-        <audio controls>
-            <source src="/Album/Album_Image/SampleTrack.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </footer>
+<footer>
+    <audio controls>
+        <source src="/Album/Album_Image/SampleTrack.mp3" type="audio/mpeg">
+    </audio>
+</footer>
     
 </body>
 </html>
