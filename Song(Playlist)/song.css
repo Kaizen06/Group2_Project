@@ -7,7 +7,8 @@
     padding: 0;
     box-sizing: border-box;
     background-color: transparent;
-    border: none;
+    text-decoration: none;
+    /* border: none; */
 }
 
 .music-app {
@@ -26,7 +27,7 @@
 /*This is for Main Content Styles */
 .main-content {
     display: grid;
-    grid-template-rows: 0.3fr 0.3fr 3fr;
+    grid-template-rows: 0.3fr 0.3fr 3fr 15fr;
     gap: 40px;
     position: absolute;
     width: 85%;
@@ -74,41 +75,120 @@
     grid-row: 3;
     display: grid;
     grid-template-columns: repeat(auto-fill, 4fr);
-    grid-template-rows: 0.3fr 10fr;
-    .one_bar{
-        border-bottom: 0.3px solid #888;
-        display: grid;
-        grid-row: 1;
-        grid-template-columns: 0.3fr 4fr 2fr 1fr;
+    grid-template-rows: 0.3fr auto;
+
+    table{
+        width: 100%;
+        border: none;
+    }
+
+    .tHead{
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid gray;
+    }
+
+    .tdiv{
+        padding: 5px 10px;
+        border: none;
+        border-bottom: 1px solid gray;
+        h3,p{
+            color: #000;
+            font-family: 'Roboto', sans-serif;
+            margin: auto;
+        }
+        p{
+            color: #929292;
+        }
         .num{
-            grid-column: 1;
-            margin: auto;
+            font-size: 20px;
+            color: #494949;
+            font-weight: 100;
+            border-right: 1px solid gray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .title{
-            grid-column: 2;
-            margin: auto;
-        }
-        .dateAdded{
-            margin: auto;
-            grid-column: 3;
-        }
-        .time{
-            margin: auto;
-            grid-column: 4;
-        }
-        .num,
-        .title,
-        .dateAdded,
-        .time{
-            padding: 10px 5px;
+        .title_present{
+            display: flex;
+            flex-direction: row;
+            .title_play{
+                display: flex;
+                justify-content: start;
+                margin-top: auto;
+                margin-bottom: auto;.play_button{
+                    font-size: 30px;
+                    color: gray;
+                    transition: all ease-in-out 0.5s;
+                    &:hover{
+                        overflow: hidden;
+                        font-size: calc(30px * 13/10);
+                        color: #3BD172;
+                    }
+                }
+            }
+            .within{
+                display: flex;
+                flex-direction: column;
+                a{
+                    display: flex;
+                    margin-left: 30px;
+                    gap: 40px;
+                }
+                img{
+                    width: 50px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
         }
     }
-    two_bar{
-        grid-row: 2;
 
-        .song_display{
-            background-color: #0056b3;
+    .two_bar{
+        grid-row: 2;
+        grid-column: 1/4;
+        grid-template-columns: repeat(auto-fill, 4fr);
+        grid-template-rows: 0.3fr 10fr;
+        
+    }
+}
+.leftover{
+    grid-row: 4;
+    margin-top: 40px;
+}
+
+.absolute_foot{
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    width: calc(100% - 200px);
+    height: 8vh;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    
+    .title{
+        display: flex;
+        gap: 40px;
+        grid-row: 2 span;
+        grid-column: 1;
+        margin: auto;
+        img{
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 50px;
+            border-radius: 10px;
         }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            color: #676666;
+        }
+        h3,p{
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+    .playing{
+
     }
 }
 
@@ -216,7 +296,7 @@
 
 
 .auth-text {
-    color: #000;
+    color: #fff;
     font-family: Inter, var(--default-font);
     font-size: 14px;
     font-weight: 500;

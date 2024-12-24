@@ -57,6 +57,7 @@
 }
 
 .sidebar-item {
+    border: none;
     transition: all ease 0.6s;
     cursor: pointer;
     display: flex;
@@ -115,6 +116,7 @@
 }
 
 .sidebar-item-tick {
+    border: none;
     transition: all ease 0.6s;
     cursor: pointer;
     display: flex;
@@ -210,6 +212,7 @@
 
 .auth-button {
     display: flex;
+    border: none;
     align-items: center;
     gap: 8px;
     width: 150px;
