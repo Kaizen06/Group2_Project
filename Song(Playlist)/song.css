@@ -1,9 +1,6 @@
 @import url(../sidebar.css);
 @import url(https://fonts.googleapis.com/css2?family=Kablammo&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
-:root{
-    --big-latina: calc(100% + 15px);
-}
 
 *{
     margin: 0;
@@ -248,13 +245,36 @@
             height: 100%; /* Occupies full height of the container */
             width: 0%; /* Initial width, can be updated dynamically */
             position: absolute; /* Positions relative to `.progress-container` */
-            transition: width 0.1s linear; /* Smooth width change */
+            transition: width 100ms linear; /* Smooth width change */
         }
     }
 }
 
 .absolute_foot.play .title img{
     animation-play-state: running;
+}
+
+.nextContainer{
+    grid-column: 3;
+    grid-row: 2 span;
+    margin: auto;
+    .volume{
+        gap: 20px;
+        display: flex;
+        .speaker{
+            font-size: 20px;
+        }
+        .bar{
+            margin: auto;
+            width: 100px;
+            background-color: #fff;
+            height: 4px;
+        }
+        .microphone{
+            font-size: 20px;
+            margin: auto;
+        }
+    }
 }
 
 @keyframes rotate{
@@ -412,6 +432,11 @@
     width: 90%;
     max-width: 300px;
     position: relative;
+    h2,
+    #signUpForm label{
+        font-family: 'Roboto', sans-serif;
+        color: #000;
+    }
 }
   
 .close-btn {
