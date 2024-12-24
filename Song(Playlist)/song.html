@@ -34,7 +34,7 @@
                 <table border="1" style="border-collapse: collapse;">
                   <tr>
                     <th class="tHead">N.o#</th>
-                    <th class="tHead">Title</th>
+                    <th class="tHead-title">Title</th>
                     <th class="tHead">Date Added</th>
                     <th class="tHead"><i class="fa fa-clock"></i></th>
                   </tr>
@@ -252,13 +252,25 @@
               <div class="leftover"></div>
             </main>
         <footer class="absolute_foot">
-            <div class="rectangle">
-              <div class="title">
-                <img src="../Song(Playlist)/Image/https___images.genius.com_6318a87a42a5987190930c42936e96b2.1000x1000x1.jpg" alt="505">
-                <h3>505</h3>
-                <p>by Artic Monkey</p>
-              </div>
-              <div class="playing"></div>
+            <div class="title">
+              <img src="../Song(Playlist)/Image/https___images.genius.com_6318a87a42a5987190930c42936e96b2.1000x1000x1.jpg" alt="505">
+              <h3>505</h3>
+              <p>by Artic Monkey</p>
+            </div>
+            <audio src="../Song(Playlist)/Image/505.mp3" id="audio"></audio>
+            <div class="playing">
+              <button id="prev" class="action-btn">
+                <i class="fa fa-fast-backward"></i>
+              </button>
+              <button id="play" class="action-btn action-btn-big">
+                <i class="fa fa-play-circle"></i>
+              </button>
+              <button id="next" class="action-btn">
+                <i class="fa fa-fast-forward"></i>
+              </button>
+            </div>
+            <div class="progress-container">
+              <div class="progress"></div>
             </div>
         </footer>
         <aside class="sidebar">
@@ -375,5 +387,9 @@
               </div>
             </div>
     </div>
+    <script src="../Main Page/script.js"></script>
+    <script src="../Main Page/SignInForm.js"></script>
+    <script src="../Main Page/script.js"></script>
+    <script src="../Song(Playlist)/action.js"></script>
 </body>
 </html>

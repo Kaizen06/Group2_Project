@@ -1,6 +1,9 @@
 @import url(../sidebar.css);
 @import url(https://fonts.googleapis.com/css2?family=Kablammo&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
+:root{
+    --big-latina: calc(100% + 15px);
+}
 
 *{
     margin: 0;
@@ -60,6 +63,8 @@
 
 .secondContent{
     grid-row: 2;
+    display: flex;
+    flex-wrap: wrap;
     h1{
         text-transform: capitalize;
         font-family: "Protest Revolution", sans-serif;
@@ -86,12 +91,18 @@
         padding: 10px;
         border: none;
         border-bottom: 1px solid gray;
+        text-align: start;
+    }
+    .tHead-title{
+        border: none;
+        border-bottom: 1px solid gray;
     }
 
     .tdiv{
         padding: 5px 10px;
         border: none;
         border-bottom: 1px solid gray;
+        color: #929292;
         h3,p{
             color: #000;
             font-family: 'Roboto', sans-serif;
@@ -164,19 +175,20 @@
     background-color: #ddd;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto auto;
-    
+    grid-template-rows: 0.1fr 1fr;
+    border-radius: 10px 10px 0 0;
     .title{
         display: flex;
         gap: 40px;
         grid-row: 2 span;
         grid-column: 1;
         margin: auto;
+        margin-left: 30px;
         img{
-            margin-top: auto;
-            margin-bottom: auto;
             width: 50px;
-            border-radius: 10px;
+            border-radius: 100%;
+            animation: rotate 3s linear infinite;
+            animation-play-state: paused;
         }
         p{
             font-size: 16px;
@@ -185,7 +197,72 @@
         }
         h3,p{
             font-family: 'Roboto', sans-serif;
+            margin: auto;
         }
+    }
+    .playing{
+        display: flex;
+        margin: auto;
+        grid-column: 2;
+        grid-row: 2;
+        overflow: hidden;
+        padding: 0 25px;
+        .action-btn{
+            border: none;
+            font-size: 20px;
+            padding: 20px;
+            color: #888;
+            transition: all ease-in-out 0.3s;
+            &:hover{
+                overflow: hidden;
+                transform: scale(1.2);
+                color: #3BD172;
+            }
+        }
+        .action-btn-big{
+            overflow: hidden;
+            font-size: 30px;
+            transition: all ease-in-out 0.4s;
+            color: #494949;
+            &:hover{
+                overflow: hidden;
+                transform: scale(1.2);
+                color: #3BD172;
+            }
+        }
+    }
+    .progress-container{
+        grid-column: 2;
+        grid-row: 1;
+        background-color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 8px;
+        height: 4px; /* Ensures visible height */
+        width: 100%; /* Makes it span the entire width */
+        position: relative; /* Ensure child `.progress` is positioned relative to this container */
+        overflow: hidden; /* Prevents `.progress` from spilling outside */
+        .progress{
+            background-color: #3BD172;
+            border-radius: 5px; /* Matches parent */
+            height: 100%; /* Occupies full height of the container */
+            width: 0%; /* Initial width, can be updated dynamically */
+            position: absolute; /* Positions relative to `.progress-container` */
+            transition: width 0.1s linear; /* Smooth width change */
+        }
+    }
+}
+
+.absolute_foot.play .title img{
+    animation-play-state: running;
+}
+
+@keyframes rotate{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
     }
 }
 
