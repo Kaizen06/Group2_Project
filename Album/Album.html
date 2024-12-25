@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Album</title>
-    <link rel="stylesheet" href="Album_Style.css">
+    <link rel="stylesheet" href="../Album/Album_Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +17,9 @@
         <aside class="sidebar">
           <section class="sidebar-section">
             <h2 class="sidebar-title">Discover</h2>
-            <button id="sidebar-item-tick">
+            <button id="sidebar-item" onclick="window.location.href='../Main%20Page/index.html'">
               <span class="sidebar-icon"><i class="fa fa-play-circle"></i></span>
-              <span class="sidebar-text-tick">Listen Now</span>
+              <span class="sidebar-text">Listen Now</span>
             </button>
             <button id="sidebar-item" onclick="window.location.href='/Browse/Browse.html';">
               <span class="sidebar-icon"><i class="fa fa-globe-americas"></i></span>
@@ -51,9 +51,9 @@
               <span class="sidebar-text">Artists</span>
             </button>
             
-            <button id="sidebar-item" onclick="window.location.href='/Album/Album.html';">
+            <button id="sidebar-item-tick" onclick="window.location.href='/Album/Album.html';">
               <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
-              <span class="sidebar-text">Albums</span>
+              <span class="sidebar-text-tick">Albums</span>
             </button>
           </section>
       
