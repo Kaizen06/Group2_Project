@@ -121,7 +121,7 @@
         }
         .author p{
             color: #888;
-            font-size: 14px;
+            font-size: 10px;
         }
     }
 }
@@ -147,6 +147,10 @@
         justify-content: start;
         flex-grow: 1;
         gap: 40px;
+        p{
+            color: #888;
+            font-size: 10px;
+        }
         .pp-frame{
             display: flex;
             flex-direction: column;
