@@ -172,7 +172,7 @@
     background-color: #ddd;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-rows: 10fr 1fr;
     border-radius: 10px 10px 0 0;
     .title{
         display: flex;
@@ -201,7 +201,7 @@
         display: flex;
         margin: auto;
         grid-column: 2;
-        grid-row: 2;
+        grid-row: 1;
         overflow: hidden;
         padding: 0 25px;
         .action-btn{
