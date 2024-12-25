@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Browse</title>
+        <link rel="stylesheet" href="../Artist(Library)/style(artists).css">
+        <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+    </head>
+<body>
+     <!---Menu-->
+     <div>
+        <aside class="sidebar">
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Discover</h2>
+            <button id="sidebar-item-tick">
+              <span class="sidebar-icon"><i class="fa fa-play-circle"></i></span>
+              <span class="sidebar-text-tick">Listen Now</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-globe-americas"></i></span>
+              <span class="sidebar-text">Browser</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-radio"></i></span>
+              <span class="sidebar-text">Radio</span>
+            </button>
+          </section>
+      
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Library</h2>
+            <button id="sidebar-item" onclick="window.location.href='../Main%20/Playlist(Library)/playlist.html'">
+              <span class="sidebar-icon"><i class="fa fa-cubes-stacked"></i></span>
+              <span class="sidebar-text">Playlists</span>
+            </button>
+            <button id="sidebar-item" onclick="window.location.href='../Song(Library)/song.html'">
+              <span class="sidebar-icon"><i class="fa fa-heart-music-camera-bolt"></i></span>
+              <span class="sidebar-text">Songs</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
+              <span class="sidebar-text">Made for you</span>
+            </button>
+            <button id="sidebar-item" onclick="window.location.href='../Artist(Library)/artists.html'">
+              <span class="sidebar-icon"><i class="fa fa-person"></i></span>
+              <span class="sidebar-text">Artists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
+              <span class="sidebar-text">Albums</span>
+            </button>
+          </section>
+      
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Playlists</h2>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-circle-arrow-down"></i></span>
+              <span class="sidebar-text">Playlists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-music"></i></span>
+              <span class="sidebar-text">Songs</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
+              <span class="sidebar-text">Made for you</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-person"></i></span>
+              <span class="sidebar-text">Artists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
+              <span class="sidebar-text">Albums</span>
+            </button>
+          </section>
+      
+          <div class="auth-buttons">
+            <button class="auth-button" id="authButton">
+                <span class="ahjmr"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                <span class="auth-text">Sign Up</span>
+                <span class="animBoot"><i class="fa fa-clipboard-question"></i></span>
+            </button>
+        </div>
+        <p class="auth-info">Already have an account? <a href="#" class="auth-link" id="openSignIn">Log In</a></p>
+        
+        <div id="signInModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h2>Sign In</h2>
+                <form id="signInForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+            </div>
+        </div>
+        </aside>
+      </div>
+      <script src="script.js"></script>
+
+    <!---playlist-->
+    <div class="span">
+        <div class="Artists">
+            <h1>Artists</h1> 
+            <img src="Disc.png" alt="Page Image">
+        </div>
+        <hr>
+        <div class="box">
+            <div class="box1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMY1LfeIXilclDPHMzp5RJAjeteeDFzUKIBA&s" alt="Page Image">
+                <div class="title">Girl's Generation</div>
+            </div>
+        
+            <div class="box2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDxAKZXTfAcmLxMdoDFY_u4CPwk6NLn4WWIg&s" alt="Page Image">
+                <div class="title">Selena Gomez</div>
+            </div>
+        
+            <div class="box3">
+                <img src="https://i1.sndcdn.com/artworks-000069775005-1hd2qh-t500x500.jpg" alt="Page Image" id="roly-poly">
+                <div class="title">Noly</div>
+            </div>
+
+            <div class="box4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBvfdMBLiXFxKqFD8YuzaG8EJbbo3tfVPe6g&s" alt="Page Image">
+                <div class="title">Yoasobi</div>
+            </div>
+            <div class="box5">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCgV9bK3Mi5D3o83S2hTGJytjQVkN9vqeJ-Q&s" alt="Page Image">
+                <div class="title">Black Pink</div>
+            </div>
+        
+            <div class="box6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJuZszlEbjieaomGhfWs3fEkUYsUfJdfa0A&s" alt="Page Image">
+                <div class="title">Gfriend</div>
+            </div>
+        
+            <div class="box7">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlz-0gZGjxoAp2wa6pbtGIR_9nsVwQZMHbOQ&s" alt="Page Image" id="roly-poly">
+                <div class="title">Taylor swift</div>
+            </div>
+
+            <div class="box8">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHRloQJU_2HkYDn3L6Q8PJm2Gb2bm1VcCiRg&s" alt="Page Image">
+                <div class="title">Billi Eilish</div>
+            </div>
+
+            <div class="box9">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRec1AMhbaPyUUR1nccXUDhyyW_F1CRGTnkww&s" alt="Page Image">
+                <div class="title">BNK48</div>
+            </div>
+        
+            <div class="box10">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXKsRIeHqgkUUyrLSxY4xFz6R-0a62YT5_2A&s" alt="Page Image" id="roly-poly">
+                <div class="title">The Weeknd</div>
+            </div>
+
+            <div class="box11">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCGxbyV77sJJRi4Tbx71hSSGJr4BEgL7mYMQ&s" alt="Page Image">
+                <div class="title">Lady Gaga</div>
+            </div>
+
+            <div class="box12">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03MPzxOntPegsKcgDnzLAeku-OAGVliMzUA&s" alt="Page Image">
+                <div class="title">Big Bang</div>
+            </div>
+        
+            <div class="box13">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWTvNqtg2hUiqjYQBEnTc5b4u5sYVvzxQ7kA&s" alt="Page Image" id="roly-poly">
+                <div class="title">Alan Walker</div>
+            </div>
+
+            <div class="box14">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ykU-3HwkMLx6isbUHq4jScIjX7302lZ03w&s" alt="Page Image">
+                <div class="title">Ariana Grande</div>
+            </div>
+            <div class="box15">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yJ6v4trEqXGGymiN8IWOi0d69pJ2T0bXgw&s" alt="Page Image">
+                <div class="title">Raye</div>
+            </div>
+        
+            <div class="box16">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Vlwt7jUgyxHkOqjz5Qxq5XC-UYZxE6QJIw&s" alt="Page Image">
+                <div class="title">Charlie Puth</div>
+            </div>
+        
+            <div class="box17">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMxUAho2o8X19_1tk9JNXL6xFBZfR9TkX6hA&s" alt="Page Image" id="roly-poly">
+                <div class="title">Melanie Martinez</div>
+            </div>
+
+            <div class="box18">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIyizO6KbMrLiXKwQCwojS-DKhlKqSYPX_2Q&s" alt="Page Image">
+                <div class="title">En Sheeran</div>
+            </div>
+
+            <div class="box19">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgHpwp6D_6Rk6_xQV5MmgCAbMIxOSgx_pVMQ&s" alt="Page Image">
+                <div class="title">Westlife</div>
+            </div>
+        
+            <div class="box20">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGYzilNibVvBbEXa8YXp-kGgeZVHy7CHQIpw&s" alt="Page Image">
+                <div class="title">Yuiko Ohara</div>
+            </div>
+
+            <div class="box21">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUedG4yM7NPokVdUl5Bk-yP8FA0gWvQuLew&s" alt="Page Image">
+                <div class="title">Bruno Mars</div>
+            </div>
+        
+            <div class="box22">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbeS_nVaWIBq8o2iLy-9N8Xk2HLrYN46J4SA&s" id="roly-poly">
+                <div class="title">Jennie Kim</div>
+            </div>
+
+            <div class="box23">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX0s-KYEnhrk95Ctn2HGHsH2VGB-IYZCOE1w&s" alt="Page Image">
+                <div class="title">Jeff Satur</div>
+            </div>
+
+            <div class="box24">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKrqi94BfrBkN51jOy8PtR870o6vA3uFB5XA&s" alt="Page Image">
+                <div class="title">Olivia Rodrigo</div>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>

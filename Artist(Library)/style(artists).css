@@ -1,0 +1,186 @@
+@import url('../sidebar\(artists\).css');
+/* General body styles */
+body {
+    background-color: #ffffff; /* Darker background for modern music app feel */
+    font-family: 'Roboto', sans-serif; /* Sleek and modern font */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    color: #ffffff; /* High contrast text for accessibility */
+    line-height: 1.6; /* Improved readability */
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.span {
+    width: 90%;
+    margin-left:10em;
+}
+
+/* Playlist styling */
+.Artists {
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(#7fd2ff, #245a73);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 140px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.Artists img {
+    border-radius: 12px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-left: auto;
+}
+
+.Artists h1 {
+    font-weight: 700;
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Box grid styling */
+.box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background: #e3e2e2;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(244, 244, 244, 0.5);
+}
+
+.box > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.box img {
+    border-radius: 10px; /* Rounded corners for a softer look */
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(159, 241, 255, 0.878); /* Subtle shadow for depth */
+    border: 3px solid rgba(255, 255, 255, 0.1); /* Thin border for refinement */
+}
+
+.box > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(27, 209, 255, 0.2);
+}
+
+.title {
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* HR Styling */
+hr {
+ 
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 30px 0;
+}
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .span {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .span {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        grid-template-columns: 1fr; /* Single-column grid */
+        gap: 10px; /* Smaller gaps for compact layout */
+        margin-top: 20px;
+    }
+
+    .box img {
+        width: 80%; /* Scaled images */
+        height: auto;
+    }
+
+    .title {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+
+    .Artists {
+        flex-direction: column; /* Stack playlist section */
+        height: auto; /* Adapt height for smaller screens */
+        text-align: center; /* Center-align text */
+    }
+
+    .Artists img {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+    }
+
+    .Artists h1 {
+        font-size: 1.5rem;
+    }
+}
+
