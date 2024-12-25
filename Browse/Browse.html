@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse</title>
+    <link rel="stylesheet" href="Browse_Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+    <!---Menu-->
+    <div>
+        <aside class="sidebar">
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Discover</h2>
+            <button id="sidebar-item-tick">
+              <span class="sidebar-icon"><i class="fa fa-play-circle"></i></span>
+              <span class="sidebar-text-tick">Listen Now</span>
+            </button>
+            <!--Browse-->
+            <button id="sidebar-item" onclick="window.location.href='/browse/Browse.html';">
+              <span class="sidebar-icon"><i class="fa fa-globe-americas"></i></span>
+              <span class="sidebar-text">Browser</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-radio"></i></span>
+              <span class="sidebar-text">Radio</span>
+            </button>
+          </section>
+      
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Library</h2>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-cubes-stacked"></i></span>
+              <span class="sidebar-text">Playlists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-heart-music-camera-bolt"></i></span>
+              <span class="sidebar-text">Songs</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
+              <span class="sidebar-text">Made for you</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-person"></i></span>
+              <span class="sidebar-text">Artists</span>
+            </button>
+            <!--Album-->
+            <button id="sidebar-item" onclick="window.location.href='/Album/Album.html';">
+              <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
+              <span class="sidebar-text">Albums</span>
+            </button>
+          </section>
+      
+          <section class="sidebar-section">
+            <h2 class="sidebar-title">Playlists</h2>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-circle-arrow-down"></i></span>
+              <span class="sidebar-text">Playlists</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-music"></i></span>
+              <span class="sidebar-text">Songs</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-hand-point-right"></i></span>
+              <span class="sidebar-text">Made for you</span>
+            </button>
+            <button id="sidebar-item">
+              <span class="sidebar-icon"><i class="fa fa-person"></i></span>
+              <span class="sidebar-text">Artists</span>
+            </button>
+            <!--Album-->
+            <button id="sidebar-item" onclick="window.location.href='/Album/Album.html';">
+              <span class="sidebar-icon"><i class="fa fa-boxes-stacked"></i></span>
+              <span class="sidebar-text">Albums</span>
+            </button>
+          </section>
+      
+          <div class="auth-buttons">
+            <button class="auth-button" id="authButton">
+                <span class="ahjmr"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                <span class="auth-text">Sign Up</span>
+                <span class="animBoot"><i class="fa fa-clipboard-question"></i></span>
+            </button>
+        </div>
+        <p class="auth-info">Already have an account? <a href="#" class="auth-link" id="openSignIn">Log In</a></p>
+        
+        <div id="signInModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h2>Sign In</h2>
+                <form id="signInForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+            </div>
+        </div>
+        </aside>
+      </div>
+      <script src="/script.js"></script>
+      
+    <!---logo-->
+    <main class="main-background">
+      <div>
+        <header class="header">
+            <img src="Browse_Image/Music_Note.jpg" alt="No Limits Logo" width="1150px" height="200px">
+        </header>
+      </div>
+      <div class="Categories">Browse Catagories</div>
+        <!--Browse-->
+        <div class="browse">
+            <div class="card">
+                <img src="Browse_Image/Classic.jpg" alt="Classic">
+                <p>Classic</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Country.jpg" alt="Country">
+                <p>Country</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Hits.jpg" alt="Hits">
+                <p>Hits</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Pop.jpg" alt="Pop">
+                <p>Pop</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Sleep.jpg" alt="Sleep">
+                <p>Sleep</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Hit-Hop.jpg" alt="Hip-Hop">
+                <p>Hip-Hop</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Chill.jpg" alt="Chill">
+                <p>Chill</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Anime.jpg" alt="Anime">
+                 <p>Anime</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/alternative.jpg" alt="Alternative">
+                <p>Alternative</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/DJ Mixes.jpg" alt="DJ Mixes">
+                <p>DJ Mixes</p>
+            </div>
+
+            <div class="card">                 
+                <img src="Browse_Image/Charts.jpg" alt="Charts">
+                <p>Charts</p>
+            </div>
+            <div class="card">                 
+                <img src="Browse_Image/Classic Rock.jpg" alt="Classic ROck">
+                <p>Classic Rock</p>
+            </div>
+
+
+            <!--Test-->
+            <div class="card">
+                <img src="Browse_Image/Podcast.jpg" alt="Podcast">
+                <p>Podcasts</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/k-pop.jpg" alt="K-pop">
+                <p>K-pop</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/images.jpg" alt="Party">
+                <p>Party</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/J-pop.jpg" alt="J-Pop">
+                <p>J-Pop</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/metal.jpg" alt="Metal">
+                <p>Metal</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Wellness.jpg" alt="Wellness">
+                <p>Wellness</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Gaming.jpg" alt="Gaming">
+                <p>Gaming</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Focus.jpg" alt="Focus">
+                 <p>Focus</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Soul.jpg" alt="Soul">
+                <p>Soul</p>
+            </div>
+
+            <div class="card">
+                <img src="Browse_Image/Punk.jpg" alt="Punk">
+                <p>Punk</p>
+            </div>
+
+            <div class="card">                 
+                <img src="Browse_Image/Nexflix.jpg" alt="Nexflix">
+                <p>Netflix</p>
+            </div>
+            <div class="card">                 
+                <img src="Browse_Image/travel.jpg" alt="Travel">
+                <p>Traval</p>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
